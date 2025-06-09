@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apple Clone – Contact</title>
+  <link rel="stylesheet" href="styles/contact.css" />
+</head>
+<body>
+
+  <!-- Back to Top button, shown on scroll via JS -->
+  <button id="backToTop">⬆️ Back to Top</button> <!-- Scrolls to top when clicked (handled by JS) -->
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Apple logo on the left, use correct relative path -->
+      <img src="images/applelogo.png" class="logo" alt="Apple Logo">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="aifeatures.html">AI Features</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Hero Section -->
+  <section class="contact-hero aura-box fade-in reveal">
+    <h1 class="fade-in" style="animation-delay: 0.2s;">Contact Apple Support</h1>
+    <p class="fade-in" style="animation-delay: 0.4s;">We’re here to help with anything you need.</p>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-container">
+    <form class="contact-form fade-in reveal" action="https://example.com/submit-form" method="POST">
+      <!-- User's Name -->
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <!-- User's Email -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+      <!-- User's Message -->
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <!-- Use correct relative path for logo -->
+    <img src="images/applelogo.png" alt="Apple Logo" class="footer-logo" />
+    <p>© 2025 Apple Clone. Made by Edward Wilson.</p>
+  </footer>
+
+  <!-- JavaScript for Back to Top button and reveal animations -->
+  <script src="script/contact.js"></script>
+</body>
+</html>

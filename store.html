@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apple Clone – Store</title>
+  <link rel="stylesheet" href="styles/store.css" />
+</head>
+<body>
+
+  <!-- Back to Top button, shown on scroll via JS -->
+  <button id="backToTop">⬆️ Back to Top</button> <!-- Appears after scrolling down, handled by JS -->
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <nav class="nav-container">
+      <img src="images/applelogo.png" alt="Apple Logo" class="logo" /> <!-- Apple logo in navbar -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li> <!-- Link to homepage -->
+        <li><a href="store.html" class="active">Store</a></li> <!-- Current page highlighted -->
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="aifeatures.html">AI Features</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Store Hero -->
+  <section class="store-hero aura-box fade-in reveal">
+    <h1 class="fade-in" style="animation-delay: 0.2s;">Shop the Apple Collection</h1> <!-- Main store heading -->
+    <h2 class="fade-in" style="animation-delay: 0.4s;">
+      Introducing <span class="gradient-text">Artificial Intelligence</span>
+    </h2>
+    <p class="fade-in" style="animation-delay: 0.6s;">
+      Explore the latest iPhone, Mac, Watch, and more.<br>
+      Performance reimagined for your world.
+    </p>
+  </section>
+
+  <!-- Product Grid: Displays all products in a responsive grid -->
+  <section class="store-products">
+    <!-- Each .product-card is a product with image, name, price, description, and link -->
+    <div class="product-card fade-in reveal" style="animation-delay: 0.2s;">
+      <img src="images/iphone16promax.png" alt="iPhone 16 Pro Max" />
+      <h3>iPhone 16 Pro Max</h3>
+      <p><b>From £1,199</b></p>
+      <p><i>The most advanced iPhone ever. <span class="gradient-text">AI-enhanced</span> performance</i></p>
+      <a href="https://www.apple.com/iphone-16-pro/" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 0.3s;">
+      <img src="images/macbookprom4.png" alt="MacBook Pro M4" />
+      <h3>MacBook Pro M4</h3>
+      <p><b>From £1,889</b></p>
+      <p><i>Unmatched performance. Unreal display, MacBook, evolved. <span class="gradient-text"><br>AI-enhanced</span> performance</i></p>
+      <a href="https://www.apple.com/macbook-pro/" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 0.4s;">
+      <img src="images/applewatchseries10.png" alt="Apple Watch Series 10" />
+      <h3>Apple Watch Series 10</h3>
+      <p><b>From £449</b></p>
+      <p><i>Smarter. Stronger. More connected than ever.</i></p>
+      <a href="https://www.apple.com/apple-watch-series-10/" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 0.5s;">
+      <img src="images/airpodsmaxgen3.png" alt="AirPods Max Gen 3" />
+      <h3>AirPods Max Gen 3</h3>
+      <p><b>From £399</b></p>
+      <p><i>High-fidelity sound. Spatial awareness. Complete control.</i></p>
+      <a href="https://www.apple.com/airpods-max/" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 0.6s;">
+      <img src="images/imacprom4.png" alt="iMac Pro m4" />
+      <h3>iMac Pro m4</h3>
+      <p><b>From £2,499</b></p>
+      <p><i>All-in-one performance desktop with M4 power and 24&quot; Retina XDR display. <span class="gradient-text">AI-enhanced</span> performance</i></p>
+      <a href="https://www.apple.com/imac/" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 0.7s;">
+      <img src="images/ipadprom4.png" alt="iPad Pro m4" />
+      <h3>iPad Pro M4</h3>
+      <p><b>From £1,199</b></p>
+      <p><i>Tablet-laptop hybrid with Magic Keyboard and Pencil compatibility. <span class="gradient-text">AI-enhanced</span> performance</i></p>
+      <a href="https://www.apple.com/ipad-pro/" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 0.8s;">
+      <img src="images/applevisionpro.png" alt="Vision Pro" />
+      <h3>Apple Vision Pro (AR Headset)</h3>
+      <p><b>From £2,999</b></p>
+      <p><i>Futuristic spatial computing device with immersive AR experiences. <span class="gradient-text">AI-enhanced</span> performance</i></p>
+      <a href="https://www.apple.com/apple-vision-pro/" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 0.9s;">
+      <img src="images/appletvpro.png" alt="TV Pro" />
+      <h3>Apple TV Pro</h3>
+      <p><b>From £199</b></p>
+      <p><i>Compact with powerful 4k HDR streamer + gaming + smart home hub.</i></p>
+      <a href="https://www.apple.com/shop/buy-tv/apple-tv-4k" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 1.0s;">
+      <img src="images/applegamepad.png" alt="Gamepad" />
+      <h3>Apple GamePad</h3>
+      <p><b>From £149</b></p>
+      <p><i>High-end game controller built for Apple ecosystem gaming.</i></p>
+      <a href="gamepad.html" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 1.1s;">
+      <img src="images/magicaccessoriesset.png" alt="Magic Accessories Set" />
+      <h3>Magic Accessories Set</h3>
+      <p><b>From £299</b></p>
+      <p><i>Includes Magic Mouse, Magic Keyboard, and Magic Trackpad.</i></p>
+      <a href="https://www.apple.com/shop/accessories/all" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 1.2s;">
+      <img src="images/applepowerdock.png" alt="PowerDock" />
+      <h3>Apple PowerDock</h3>
+      <p><b>From £179</b></p>
+      <p><i>Multi-device wireless charger with Apple-style glowing UI and magnetic strip.</i></p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 1.3s;">
+      <img src="images/homepodmini.png" alt="HomePod Mini" />
+      <h3>HomePod Mini Gen 3</h3>
+      <p><b>From £119</b></p>
+      <p><i>Compact speaker with spatial audio, AI support, and Siri integration. <span class="gradient-text">AI-enhanced</span> performance</i></p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 1.4s;">
+      <img src="images/applestudiobundle.png" alt="Studio Bundle" />
+      <h3>Apple Studio Bundle</h3>
+      <p><b>From £3,499</b></p>
+      <p><i>Includes Mac Studio, Studio Display, and full accessory suite.</i></p>
+      <a href="https://www.apple.com/mac-studio/" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 1.5s;">
+      <img src="images/appletag2.png" alt="Apple Tag 2" />
+      <h3>Apple Tag Gen 2</h3>
+      <p><b>From £49</b></p>
+      <p><i>Next-gen tracker with improved precision, FindMy+ and haptic feedback.</i></p>
+      <a href="appletag2.html" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 1.6s;">
+      <img src="images/applepenpro.png" alt="Apple Pen Pro" />
+      <h3>Apple Pen Pro</h3>
+      <p><b>From £149</b></p>
+      <p><i>Advanced stylus with pressure, tilt, and magnetic charging - made for iPad Pro M4.</i></p>
+      <a href="applepenpro.html" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 1.7s;">
+      <img src="images/applesmartring.png" alt="Smart Ring" />
+      <h3>Apple Smart Ring</h3>
+      <p><b>From £249</b></p>
+      <p><i>Sleek notification + fitness tracker in ring form. Always Connected, subtly stylish.</i></p>
+      <a href="smartring.html" class="btn">Learn More</a>
+    </div>
+
+    <div class="product-card fade-in reveal" style="animation-delay: 1.8s;">
+      <img src="images/applesmartcontactlenses.png" alt="Smart Contact Lenses" />
+      <h3>Apple Smart Contact Lenses</h3>
+      <p><b>From £799</b></p>
+      <p><i>Augmented-reality contact lenses, Live overlays, AI-enhanced vision, ultra futuristic. <span class="gradient-text">AI-enhanced</span> performance</i></p>
+      <a href="contactlenses.html" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Footer: Site copyright -->
+  <footer class="site-footer">
+    <img src="images/applelogo.png" alt="Apple Logo" class="footer-logo" />
+    <p>© 2025 Apple Clone. Made by Edward Wilson.</p>
+  </footer>
+
+  <!-- JavaScript for Back to Top button and reveal animations -->
+  <script src="script/store.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apple Clone – Support</title>
+  <!-- Use relative path for CSS so it loads correctly -->
+  <link rel="stylesheet" href="styles/support.css" />
+</head>
+<body>
+
+  <!-- Back to Top button, shown on scroll via JS -->
+  <button id="backToTop">⬆️ Back to Top</button> <!-- Appears after scrolling down, handled by JS -->
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <nav class="nav-container">
+      <img src="images/applelogo.png" alt="Apple Logo" class="logo" /> <!-- Apple logo in navbar -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li> <!-- Link to homepage -->
+        <li><a href="store.html">Store</a></li>
+        <li><a href="support.html" class="active">Support</a></li> <!-- Current page highlighted -->
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="aifeatures.html">AI Features</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Support Hero Section -->
+  <header class="support-header aura-box fade-in reveal">
+    <h1 class="fade-in">Support</h1>
+    <p class="fade-in">We're here to help. Find answers, contact us, or browse topics.</p>
+  </header>
+
+  <!-- FAQ Section: Common support questions -->
+  <section>
+    <div class="faq fade-in reveal">
+      <h2 class="fade-in">Frequently Asked Questions</h2>
+
+      <!-- FAQ Item: Tracking orders -->
+      <div class="faq-item fade-in reveal">
+        <h3>How do I track my order?</h3>
+        <p>You can track your order by signing into your account and going to ‘Order History’.</p>
+      </div>
+
+      <!-- FAQ Item: Returns -->
+      <div class="faq-item fade-in reveal">
+        <h3>How do I return a product?</h3>
+        <p>Visit our returns portal and follow the instructions. You'll need your order number and email.</p>
+      </div>
+
+      <!-- FAQ Item: Damaged products -->
+      <div class="faq-item fade-in reveal">
+        <h3>What if my product is damaged?</h3>
+        <p>Contact our support team with your order details and images of the damage.</p>
+      </div>
+    </div>
+
+    <!-- Contact Box: Direct support contact info -->
+    <div class="contact-box fade-in reveal">
+      <h2>Still need help?</h2>
+      <p>Email us at <a href="mailto:support@appleclone.com">support@appleclone.com</a></p>
+      <p>Or call: <strong>0800 123 4567</strong></p>
+    </div>
+  </section>
+
+  <!-- Footer: Site copyright and logo -->
+  <footer class="site-footer">
+    <img src="images/applelogo.png" alt="Apple Logo" class="footer-logo" />
+    <p>© 2025 Apple Clone. Made by Edward Wilson.</p>
+  </footer>
+  <!-- JavaScript for Back to Top button and reveal animations -->
+  <!-- Use relative path for JS so it loads correctly -->
+  <script src="script/support.js"></script>
+</body>
+</html>

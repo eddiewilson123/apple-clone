@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apple Clone – Store</title>
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+<body>
+
+  <!-- Back to Top button, shown/hidden by JS on scroll -->
+  <button id="backToTop">⬆️ Back to Top</button> <!-- Appears after scrolling down, handled by JS -->
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <nav class="nav-container">
+      <img src="images/applelogo.png" alt="Apple Logo" class="logo" />
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="aifeatures.html">AI Features</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Homepage Hero -->
+  <section class="homepage-hero aura-box fade-in reveal">
+    <h1 class="fade-in" style="animation-delay: 0.2s;">Welcome to Apple.</h1>
+    <p class="fade-in" style="animation-delay: 0.4s;"><i>Discover innovative solutions and seamlessly integrated experiences,<br> optimized for your world.</i></p>
+  </section>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner fade-in reveal">
+    <div class="hero-text fade-in">
+      <h1 class="fade-in">iPhone 16 Pro Max</h1>
+      <h2 class="gradient-text">AI-Enhanced</h2>
+      <p>The future of performance. Designed the Apple way.</p>
+      <div class="hero-buttons">
+        <a href="https://www.apple.com/iphone-16-pro/" class="btn primary fade-in">Learn more</a>
+        <a href="https://www.apple.com/shop/buy-iphone/iphone-16-pro" class="btn secondary fade-in">Buy now</a>
+      </div>
+    </div>
+    <img src="images/iphone16prohomepage.png" alt="iPhone 16 Pro Max" class="hero-image">
+  </section>
+
+  <!-- News & Events Section: Shows latest Apple news and event highlights -->
+  <section class="event-news aura-box fade-in reveal">
+    <!-- Section Title -->
+    <h1 class="fade-in" style="animation-delay: 0.2s;">Latest News & Events</h1>
+    <p class="fade-in" style="animation-delay: 0.4s;">
+      Stay updated with the latest Apple news, product launches, and events.
+    </p>
+
+    <!-- Apple Event Box: Highlights the upcoming Apple event -->
+    <div class="event-box aura-box fade-in reveal">
+      <h2>Apple June Event 2025</h2>
+      <p>
+        Apple’s WorldWide Developers Conference (WWDC) kicks off on June 9, 2025. Join us for a live stream of the keynote address where we will unveil the latest innovations in iOS, macOS, watchOS, and more. Expect exciting announcements about new features, products, and services that will shape the future of Apple technology.
+      </p>
+      <a href="https://www.apple.com/newsroom/2025/05/apples-worldwide-developers-conference-kicks-off-june-9/" class="btn">
+        Learn More
+      </a>
+    </div>
+
+    <!-- Apple Watch News Box: Highlights the latest Apple Watch news -->
+    <div class="event-box aura-box fade-in reveal">
+      <h1 class="fade-in" style="animation-delay: 0.2s;">Apple Watch Series 10</h1>
+      <img src="images/applewatchhomepage.png" alt="Apple Watch" style="max-width: 100%; border-radius: 1rem;" />
+      <h2>Latest News</h2>
+      <p class="fade-in" style="animation-delay: 0.4s;">
+        Apple Watch Series 10 features a thinner design, improved health sensors, and a new AI-powered fitness coach that adapts to your workouts. With a brighter display and longer battery life, it’s the perfect companion for your active lifestyle. Available in new colors and materials, the Series 10 continues to redefine what a smartwatch can do.
+      </p>
+      <a href="https://www.apple.com/watch/" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <img src="images/applelogo.png" alt="Apple Logo" class="footer-logo" />
+    <p>© 2025 Apple Clone. Made by Edward Wilson.</p>
+  </footer>
+  <!-- JS for Back to Top button and reveal animations -->
+  <script src="script/index.js"></script>
+</body>
+</html>
