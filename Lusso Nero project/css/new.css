@@ -1,0 +1,350 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  height: 100%;
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.brand-name {
+  font-size: 43px;
+  color: rgb(154, 151, 151);
+  font-family: 'Playfair Display', serif;
+  pointer-events: none;
+}
+
+.hamburger {
+  position: absolute;
+  left: 20px;
+  font-size: 28px;
+  color: rgb(154, 151, 151);
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.hamburger:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.hamburger:focus {
+  outline: none;
+  color: white;
+}
+
+/* Sidebar Menu */
+.side-menu {
+  height: 100%;
+  width: 0; /* Default hidden state */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(8px);
+  overflow-y: auto; /* Allow scrolling if content exceeds viewport height */
+  transition: width 0.4s ease; /* Smooth transition for opening/closing */
+  padding-top: 80px; /* Space for the header */
+  z-index: 999;
+
+  /* Custom scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: #333 #000;
+}
+
+/* Webkit scrollbar styling for Chrome, Safari, Edge */
+.side-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.side-menu::-webkit-scrollbar-track {
+  background: #000;
+}
+
+.side-menu::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+.side-menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.side-menu a {
+  padding: 16px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: silver;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid silver;
+}
+
+.sidebar-name {
+  padding: 20px 32px 10px 32px;
+  font-size: 24px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+/* Ensure the menu content is visible when opened */
+.side-menu.open {
+  width: 250px; /* Set width when menu is opened */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.collection-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin: 0.5rem 0;
+}
+
+.hero-sub {
+  color: #ccc;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ccc;
+}
+
+/* Hero Image */
+.hero-image img {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+/* Clothing Grid */
+.clothing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.clothing-card {
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.clothing-card:hover {
+  transform: scale(1.03);
+}
+
+.clothing-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.clothing-card h3 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .hamburger {
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    z-index: 11;
+    transition: color 0.3s ease;
+  }
+
+  .hamburger:hover {
+    color: #ccc;
+  }
+
+  .side-menu a {
+    font-size: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .clothing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .clothing-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .clothing-card {
+    width: 100%;
+  }
+}
+
+/* Add to Cart Button Styling */
+.add-to-cart-btn {
+  background: linear-gradient(135deg, #333 0%, #111 100%);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.add-to-cart-btn:hover {
+  background: linear-gradient(135deg, #444 0%, #222 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.size-selector {
+  margin-top: 10px;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Cart Notifications */
+.cart-notification {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background: rgba(0, 150, 0, 0.9);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10001;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUSSO•NERO</title>
+  <link rel="stylesheet" href="css/aboutus.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Container -->
+  <header class="header">
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <div class="brand-name">LUSSO•NERO</div>
+  </header>
+
+  <!-- Sidebar Navigation -->
+  <nav id="sideMenu" class="side-menu"> 
+    <h2 class="sidebar-name">Mens</h2>
+    <a href="index.html">Home</a>
+    <a href="new.html">New Arrivals</a>
+    <a href="shirts.html">Shirts</a>
+    <a href="suits.html">Suits</a>
+    <h2 class="sidebar-name">Womens</h2>
+    <a href="womensindex.html">Home</a>
+    <a href="womensnew.html">New Arrivals</a>
+    <a href="formalwear.html">Formalwear</a>
+    <h2 class="sidebar-name">Checkout</h2>
+    <a href="cart.html">Cart</a>
+    <h2 class="sidebar-name">What we do</h2>
+    <a href="aboutus.html">About Us</a>
+  </nav>
+
+   <section class="hero-about">
+    <div class="hero-content">
+      <h2>ABOUT LUSSO NERO</h2>
+      <p>Where luxury meets precision. Welcome to the dark side of fashion.</p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-container">
+      <h3>OUR VISION</h3>
+      <p>Crafting premium fashion for men and women who demand elegance, precision, and bold presence. LUSSO NERO is not just a brand—it's a statement.</p>
+
+      <h3>THE BEGINNING</h3>
+      <p>Born from obsession with design and minimalism, LUSSO NERO was founded to disrupt the modern luxury market. Every product is engineered to reflect power and sophistication.</p>
+
+      <h3>THE AESTHETIC</h3>
+      <p>Clean lines. Monochrome tones. Sharp edges. Our philosophy is simplicity with strength—reflected in everything from our suits to our digital experience.</p>
+
+      <h3>JOIN THE MOVEMENT</h3>
+      <p>More than fashion—LUSSO NERO is a lifestyle. Join us in redefining luxury, precision, and presence for a new era.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <h3>CONTACT US</h3>
+      <p>Ready to elevate your style? Get in touch with our luxury consultants.</p>
+      
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+        </div>
+        
+        <div class="form-group">
+          <select id="inquiry" name="inquiry" required>
+            <option value="">Select Inquiry Type</option>
+            <option value="personal-styling">Personal Styling</option>
+            <option value="custom-tailoring">Custom Tailoring</option>
+            <option value="product-inquiry">Product Inquiry</option>
+            <option value="partnership">Partnership</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">SEND MESSAGE</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 LUSSO NERO. Designed by Edward Wilson.</p>
+  </footer>
+
+</body>
+</html>
+
+  <!-- Link to JavaScript -->
+  <script src="js/aboutus.js"></script>
+</body>
+</html>

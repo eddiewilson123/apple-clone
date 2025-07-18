@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUSSO•NERO - SUITS</title>
+  <link rel="stylesheet" href="./css/suits.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Container -->
+  <header class="header">
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <div class="brand-name">LUSSO•NERO</div>
+  </header>
+
+  <!-- Sidebar Navigation -->
+  <nav id="sideMenu" class="side-menu"> 
+    <h2 class="sidebar-name">Mens</h2>
+    <a href="index.html">Home</a>
+    <a href="new.html">New Arrivals</a>
+    <a href="shirts.html">Shirts</a>
+    <a href="suits.html">Suits</a>
+    <h2 class="sidebar-name">Womens</h2>
+    <a href="womensindex.html">Home</a>
+    <a href="womensnew.html">New Arrivals</a>
+    <a href="formalwear.html">Formalwear</a>
+    <h2 class="sidebar-name">Checkout</h2>
+    <a href="cart.html">Cart</a>
+    <h2 class="sidebar-name">What we do</h2>
+    <a href="aboutus.html">About Us</a>
+  </nav>
+
+  <!-- SUITS SECTION -->
+  <section class="header-section">
+    <div class="header-content">
+      <h2>SUITS</h2>
+      <p>Refined silhouettes. Timeless hues. Tailored to perfection — for those who lead with presence.</p>
+    </div>
+
+    <div class="product-grid">
+      <!-- Product Cards -->
+      <div class="product-card" data-product-id="louisvuitton-suit-001">
+        <div class="slideshow-container">
+          <img src="images/louis-vuitton-lv-blason-pont-neuf-suit--HTCF4EOQC900_PM2_Front view.avif" alt="Louis Vuitton Front" class="slide active">
+          <img src="images/louis-vuitton-lv-blason-pont-neuf-suit--HTCF4EOQC900_PM1_Back view.avif" alt="Louis Vuitton Back" class="slide">
+          <img src="images/louis-vuitton-lv-blason-pont-neuf-suit--HTCF4EOQC900_PM1_Side view.avif" alt="Louis Vuitton Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Louis Vuitton</h1>
+        <h3>Blason Pont Neuf Suit</h3>
+        <p class="product-price">£3,100.00</p>
+        <div class="size-selector">
+          <label for="size-louisvuitton-suit">Choose Your Size:</label>
+          <select id="size-louisvuitton-suit" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="tomford-pinstripe-suit-001">
+        <div class="slideshow-container">
+          <img src="images/tomfordpinstripesuitfront.avif" alt="Tom Ford Suit Front" class="slide active">
+          <img src="images/tomfordpinstripesuitback.avif" alt="Tom Ford Suit Back" class="slide">
+          <img src="images/tomfordpinstripesuitside.avif" alt="Tom Ford Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Tom Ford</h1>
+        <h3>Pinstripe Wool and Mohair Suit</h3>
+        <p class="product-price">£3,960.00</p>
+        <div class="size-selector">
+          <label for="size-tomford-pinstripe">Choose Your Size:</label>
+          <select id="size-tomford-pinstripe" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="tomford-atticus-tuxedo-001">
+        <div class="slideshow-container">
+          <img src="images/tomfordatticussuitfront.avif" alt="Grey Suit Front" class="slide active">
+          <img src="images/tomfordatticussuitback.avif" alt="Grey Suit Back" class="slide">
+          <img src="images/tomfordatticussuitside.avif" alt="Grey Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Tom Ford</h1>
+        <h3>Atticus Wool-Blend Tuxedo</h3>
+        <p class="product-price">£2,419.00</p>
+        <div class="size-selector">
+          <label for="size-tomford-atticus">Choose Your Size:</label>
+          <select id="size-tomford-atticus" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="dolce-gabbana-wool-suit-001">
+        <div class="slideshow-container">
+          <img src="images/dolce&gabbanafrontviewsuit.avif" alt="Dolce&Gabbana Suit Front" class="slide active">
+          <img src="images/dolce&gabbanabackviewsuit.avif" alt="Dolce&Gabbana Suit Back" class="slide">
+          <img src="images/dolce&gabbanasideviewsuit.avif" alt="Dolce&Gabbana Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Dolce&Gabbana</h1>
+        <h3>Wool suit</h3>
+        <p class="product-price">£1,645.00</p>
+        <div class="size-selector">
+          <label for="size-dolce-gabbana-wool">Choose Your Size:</label>
+          <select id="size-dolce-gabbana-wool" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="giorgio-armani-velvet-tuxedo-001">
+        <div class="slideshow-container">
+          <img src="images/giorgioarmanifrontview.avif" alt="Giorgio Armani Suit Front" class="slide active">
+          <img src="images/giorgioarmanibackview.avif" alt="Giorgio Armani  Suit Back" class="slide">
+          <img src="images/giorgioarmanisideview.avif" alt="Giorgio Armani  Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Giorgio Armani</h1>
+        <h3>Velvet tuxedo jacket</h3>
+        <p class="product-price">£1,515.00</p>
+        <div class="size-selector">
+          <label for="size-giorgio-armani-velvet">Choose Your Size:</label>
+          <select id="size-giorgio-armani-velvet" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+       <div class="product-card" data-product-id="tomford-striped-blazer-001">
+        <div class="slideshow-container">
+          <img src="images/tomfordpinstripesuitfront.avif" alt="Tom Ford Suit Front" class="slide active">
+          <img src="images/tomfordpinstripesuitback.avif" alt="Tom Ford Suit Back" class="slide">
+          <img src="images/tomfordpinstripesuitside.avif" alt="Tom Ford Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Tom Ford</h1>
+        <h3>Striped Wool and silk blazer</h3>
+        <p class="product-price">£1,639.00</p>
+        <div class="size-selector">
+          <label for="size-tomford-striped">Choose Your Size:</label>
+          <select id="size-tomford-striped" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="tomford-twill-suit-001">
+        <div class="slideshow-container">
+          <img src="images/tomfordtwillsuit.avif" alt="Tom Ford Suit Front" class="slide active">
+          <img src="images/tomfordtwillsuitback.avif" alt="Tom Ford Suit Back" class="slide">
+          <img src="images/tomfordtwillsuitside.avif" alt="Tom Ford Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Tom Ford</h1>
+        <h3>Silk and linen twill suit</h3>
+        <p class="product-price">£3,465.00</p>
+        <div class="size-selector">
+          <label for="size-tomford-twill">Choose Your Size:</label>
+          <select id="size-tomford-twill" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="thom-sweeny-wool-suit-001">
+        <div class="slideshow-container">
+          <img src="images/tomsweenycheckwooolsuitfront.avif" alt="Thom Sweeny Suit Front" class="slide active">
+          <img src="images/tomsweenycheckwoolsuitback.avif" alt="Thom Sweeny Suit Back" class="slide">
+          <img src="images/tomsweenycheckwoolsuitside.avif" alt="Thom Sweeny Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Thom Sweeny</h1>
+        <h3>Prince of wales wool suit</h3>
+        <p class="product-price">£1,403.00</p>
+        <div class="size-selector">
+          <label for="size-thom-sweeny">Choose Your Size:</label>
+          <select id="size-thom-sweeny" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="canadali-wool-suit-001">
+        <div class="slideshow-container">
+          <img src="images/canadaliwoolsuitfront.avif" alt="Canadali Suit Front" class="slide active">
+          <img src="images/canadaliwoolsuitback.avif" alt="Canadali Suit Back" class="slide">
+          <img src="images/canadaliwoolsuitside.avif" alt="Canadali Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Canadali</h1>
+        <h3>Single-breasted wool suit</h3>
+        <p class="product-price">£903.00</p>
+        <div class="size-selector">
+          <label for="size-canadali">Choose Your Size:</label>
+          <select id="size-canadali" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="rubinacci-linen-blazer-001">
+        <div class="slideshow-container">
+          <img src="images/rubinaccisuitfront.avif" alt="Rubinacci Suit Front" class="slide active">
+          <img src="images/rubinaccisuitback.avif" alt="Rubinacci Suit Back" class="slide">
+          <img src="images/rubinaccisuitside.avif" alt="Rubinacci Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Rubinacci</h1>
+        <h3>Linen Blazer</h3>
+        <p class="product-price">£843.00</p>
+        <div class="size-selector">
+          <label for="size-rubinacci">Choose Your Size:</label>
+          <select id="size-rubinacci" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="dolce-gabbana-silk-suit-001">
+        <div class="slideshow-container">
+          <img src="images/dolce&gabbanasilkfront.avif" alt="Dolce&Gabbana Suit Front" class="slide active">
+          <img src="images/dolce&gabbanasilkback.avif" alt="Dolce&Gabbana Suit Back" class="slide">
+          <img src="images/dolce&gabbanasilkside.avif" alt="Dolce&Gabbana Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Dolce&Gabbana</h1>
+        <h3>Silk suit</h3>
+        <p class="product-price">£2,800.00</p>
+        <div class="size-selector">
+          <label for="size-dolce-gabbana-silk">Choose Your Size:</label>
+          <select id="size-dolce-gabbana-silk" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+         <div class="product-card" data-product-id="zegna-trofeo-wool-suit-001">
+        <div class="slideshow-container">
+          <img src="images/zegnasuitfront.avif" alt="Zegna Suit Front" class="slide active">
+          <img src="images/zegnasuitback.avif" alt="Zegna Suit Back" class="slide">
+          <img src="images/zegnasuitside.avif" alt="Zegna Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Zegna</h1>
+        <h3>Trofeo wool suit</h3>
+        <p class="product-price">£2,881.00</p>
+        <div class="size-selector">
+          <label for="size-zegna">Choose Your Size:</label>
+          <select id="size-zegna" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="tomford-dyllan-blazer-001">
+        <div class="slideshow-container">
+          <img src="images/tomforddyllanfront.avif" alt="Tom Ford Suit Front" class="slide active">
+          <img src="images/tomforddyllanback.avif" alt="Tom Ford Suit Back" class="slide">
+          <img src="images/tomforddyllanside.avif" alt="Tom Ford Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Tom Ford</h1>
+        <h3>Dyllan pinstripe wool and silk blazer</h3>
+        <p class="product-price">£2,653.00</p>
+        <div class="size-selector">
+          <label for="size-tomford-dyllan">Choose Your Size:</label>
+          <select id="size-tomford-dyllan" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="brunello-cucinelli-linen-suit-001">
+        <div class="slideshow-container">
+          <img src="images/brunellocucinellisuitfront.avif" alt="Brunello Cucinelli Suit Front" class="slide active">
+          <img src="images/brunellocucinellisuitback.avif" alt="Brunello Cucinelli Suit Back" class="slide">
+          <img src="images/brunellocucinellisuitside.avif" alt="Brunello Cucinelli Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Brunello Cucinelli</h1>
+        <h3>Pinstripe linen suit</h3>
+        <p class="product-price">£3,850.00</p>
+        <div class="size-selector">
+          <label for="size-brunello-cucinelli">Choose Your Size:</label>
+          <select id="size-brunello-cucinelli" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="dolce-gabbana-twill-suit-001">
+        <div class="slideshow-container">
+          <img src="images/dolce&gabbanatwillfront.avif" alt="Dolce&Gabbana Suit Front" class="slide active">
+          <img src="images/dolce&gabbanatwillback.avif" alt="Dolce&Gabbana Suit Back" class="slide">
+          <img src="images/dolce&gabbanatwillside.avif" alt="Dolce&Gabbana Suit Side" class="slide">
+
+        </div>
+        <h1 class="product-name">Dolce&Gabbana</h1>
+        <h3>Silk twill suit</h3>
+        <p class="product-price">£3,000.00</p>
+        <div class="size-selector">
+          <label for="size-dolce-gabbana-twill">Choose Your Size:</label>
+          <select id="size-dolce-gabbana-twill" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 LUSSO•NERO. Made by Edward Wilson</p>
+  </footer>
+
+  <script src="./js/cart.js"></script>
+  <script src="./js/suits.js"></script>
+</body>
+</html>

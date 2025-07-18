@@ -1,0 +1,364 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  height: 100%;
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.brand-name {
+  font-size: 43px;
+  color: rgb(154, 151, 151);
+  font-family: 'Playfair Display', serif;
+  pointer-events: none;
+}
+
+.hamburger {
+  position: absolute;
+  left: 20px;
+  font-size: 28px;
+  color: rgb(154, 151, 151); /* Text color */
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: transparent; /* Default background */
+  padding: 10px; /* Add padding for better visibility */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.hamburger:hover {
+  color: white; /* Text color on hover */
+  background-color: black; /* Background turns black on hover */
+  transform: scale(1.1); /* Optional: Slight scaling effect */
+}
+
+/* Sidebar Menu */
+.side-menu {
+  height: 100%;
+  width: 0; /* Default hidden state */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(8px);
+  overflow-y: auto; /* Allow scrolling if content exceeds viewport height */
+  transition: width 0.4s ease; /* Smooth transition for opening/closing */
+  padding-top: 80px; /* Space for the header */
+  z-index: 999;
+
+  /* Custom scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: #333 #000;
+}
+
+/* Webkit scrollbar styling for Chrome, Safari, Edge */
+.side-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.side-menu::-webkit-scrollbar-track {
+  background: #000;
+}
+
+.side-menu::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+.side-menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.side-menu a {
+  padding: 16px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: silver;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid silver;
+}
+
+/* Ensure the menu content is visible when opened */
+.side-menu.open {
+  width: 250px; /* Set width when menu is opened */
+}
+
+.sidebar-name {
+  padding: 20px 32px 10px 32px;
+  font-size: 24px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+/* Hero Section */
+.image-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../images/background.jpg') center center/cover no-repeat;
+}
+
+.image-background .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.image-background .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.image-background .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.image-background .content p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+/* Designer Seal */
+.designer-seal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  filter: blur(0.5px);
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  animation: slowSpin 20s linear infinite;
+}
+
+.seal-letter {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+}
+
+.seal-letter.left {
+  left: 15%;
+}
+
+.seal-letter.right {
+  right: 15%;
+}
+
+/* About Button */
+.about-button {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 14px 36px;
+  color: white;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  backdrop-filter: blur(6px);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.03);
+}
+
+.about-button:hover {
+  background: rgba(255, 255, 255, 0.05);
+  letter-spacing: 3px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+/* Section Buttons Container */
+.section-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.womens-section-button {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 14px 36px;
+  color: white;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  backdrop-filter: blur(6px);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.03);
+}
+
+.womens-section-button:hover {
+  background: rgba(255, 255, 255, 0.05);
+  letter-spacing: 3px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+.mens-section-button {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 14px 36px;
+  color: white;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  backdrop-filter: blur(6px);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.03);
+}
+
+.mens-section-button:hover {
+  background: rgba(255, 255, 255, 0.05);
+  letter-spacing: 3px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  border-top: 1px solid #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .hamburger {
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    z-index: 11;
+    transition: color 0.3s ease;
+  }
+
+  .hamburger:hover {
+    color: #ccc;
+  }
+
+  .side-menu a {
+    font-size: 1rem;
+  }
+
+  .image-background .content h2 {
+    font-size: 2rem;
+  }
+
+  .image-background .content p {
+    font-size: 1rem;
+  }
+
+  .designer-seal {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .section-buttons {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .mens-section-button,
+  .womens-section-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

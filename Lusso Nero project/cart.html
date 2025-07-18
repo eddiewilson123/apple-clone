@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <div class="brand-name">LUSSO•NERO</div>
+  </header>
+
+  <!-- Sidebar Navigation -->
+  <nav id="sideMenu" class="side-menu"> 
+    <h2 class="sidebar-name">Mens</h2>
+    <a href="index.html">Home</a>
+    <a href="new.html">New Arrivals</a>
+    <a href="shirts.html">Shirts</a>
+    <a href="suits.html">Suits</a>
+    <h2 class="sidebar-name">Womens</h2>
+    <a href="womensindex.html">Home</a>
+    <a href="womensnew.html">New Arrivals</a>
+    <a href="formalwear.html">Formalwear</a>
+    <h2 class="sidebar-name">Checkout</h2>
+    <a href="cart.html">Cart</a>
+    <h2 class="sidebar-name">What we do</h2>
+    <a href="aboutus.html">About Us</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Cart Summary Section -->
+    <div class="cart-summary">
+      <h2>Your Cart</h2>
+      <ul class="cart-items">
+        <li class="cart-item">
+          <img src="/images/dolce&gabbanatwillfront.avif" alt="Product 1">
+          <div class="item-details">
+            <h3>Dolce&Gabbana Silk Twill suit</h3>
+            <p>Quantity: 1</p>
+            <p>Price: £3,000.00</p>
+          </div>
+        </li>
+        <li class="cart-item">
+          <img src="/images/tomfordmertsunglassesfront.avif" alt="Product 2">
+          <div class="item-details">
+            <h3>Tom Ford Mert Round sunglasses</h3>
+            <p>Quantity: 2</p>
+            <p>Price: £244.00</p>
+          </div>
+        </li>
+      </ul>
+      <div class="cart-total">
+        <h3>Total: £3,244.00</h3>
+      </div>
+    </div>
+
+    <!-- Checkout Container -->
+    <div class="checkout-container">
+      <h2>Checkout</h2>
+      <form class="checkout-form">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Shipping Address</label>
+          <input type="text" id="address" placeholder="123 Fashion St, London" required />
+        </div>
+        <div class="form-group">
+          <label for="card">Card Number</label>
+          <input type="text" id="card" placeholder="•••• •••• •••• ••••" required />
+        </div>
+        <div class="form-row">
+          <div class="form-group half">
+            <label for="expiry">Expiry</label>
+            <input type="text" id="expiry" placeholder="MM/YY" required />
+          </div>
+          <div class="form-group half">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="123" required />
+          </div>
+        </div>
+        <button class="order-btn">Place Order</button>
+      </form>
+    </div>
+  </main>
+  <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUSSO•NERO - SUITS</title>
+  <link rel="stylesheet" href="./css/formalwear.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Container -->
+  <header class="header">
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <div class="brand-name">LUSSO•NERO</div>
+  </header>
+
+ <!-- Sidebar Navigation -->
+  <nav id="sideMenu" class="side-menu">
+    <h2 class="sidebar-name">Womens</h2>
+    <a href="womensindex.html">Home</a>
+    <a href="womensnew.html">New Arrivals</a>
+    <a href="formalwear.html">Formalwear</a>
+    <h2 class="sidebar-name">Mens</h2>
+    <a href="index.html">Home</a>
+    <a href="new.html">New Arrivals</a>
+    <a href="shirts.html">Shirts</a>
+    <a href="suits.html">Suits</a>
+    <h2 class="sidebar-name">Checkout</h2>
+    <a href="cart.html">Cart</a>
+    <h2 class="sidebar-name">What we do</h2>
+    <a href="aboutus.html">About Us</a>
+  </nav>
+
+  <!-- SUITS SECTION -->
+  <section class="header-section">
+    <div class="header-content">
+      <h2>FORMALWEAR</h2>
+      <p>Refined silhouettes. Timeless hues. Tailored to perfection — for those who lead with presence.</p>
+    </div>
+
+    <div class="product-grid">
+      <!-- Product Cards -->
+      <div class="product-card" data-product-id="stella-mccartney-pinstripe-001">
+        <div class="slideshow-container">
+          <img src="images/stellamccartneypinstripesuitfront.avif" alt="Stella Mccartney pinstripe suit" class="slide active">
+          <img src="images/stellamccartneypinstripesuitback.avif" alt="Stella Mccartney pinstripe suit" class="slide">
+          <img src="images/stellamccartneypinstripesuitside.avif" alt="Stella Mccartney pinstripe suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Stella McCartney</h1>
+        <h3>Pinstripe oversize wool suit</h3>
+        <p class="product-price">£870.00</p>
+        <div class="size-selector">
+          <label for="size-stella-mccartney">Choose Your Size:</label>
+          <select id="size-stella-mccartney" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="max-mara-pagano-002">
+        <div class="slideshow-container">
+          <img src="images/maxmarapaganosuitfront.avif" alt="Max Mara pagano wool blend suit" class="slide active">
+          <img src="images/maxmarapaganosuitback.avif" alt="Max Mara pagano wool blend suit" class="slide">
+          <img src="images/maxmarapaganosuitside.avif" alt="Max Mara pagano wool blend suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Max Mara</h1>
+        <h3>Pagano wool-blend suit</h3>
+        <p class="product-price">£710.00</p>
+        <div class="size-selector">
+          <label for="size-max-mara-pagano">Choose Your Size:</label>
+          <select id="size-max-mara-pagano" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="brunello-cucinelli-wool-003">
+        <div class="slideshow-container">
+          <img src="images/brunellocucinelliwoolblendsuitfront.avif" alt="Brunello Cucinelli wool blend suit" class="slide active">
+          <img src="images/brunellocucinelliwoolblendsuitback.avif" alt="Brunello Cucinelli wool blend suit" class="slide">
+          <img src="images/brunellocucinelliwoolblendsuitside.webp" alt="Brunello Cucinelli wool blend suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Brunello Cucinelli</h1>
+        <h3>Wool-blend suit</h3>
+        <p class="product-price">£2,240.00</p>
+        <div class="size-selector">
+          <label for="size-brunello-cucinelli-wool">Choose Your Size:</label>
+          <select id="size-brunello-cucinelli-wool" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="blaze-milano-alie-004">
+        <div class="slideshow-container">
+          <img src="images/blazemilanomohairsuitfront.avif" alt="Blaze Milano wool and mohair suit" class="slide active">
+          <img src="images/blazemilanomohairsuitback.avif" alt="Blaze Milano wool and mohair suit" class="slide">
+          <img src="images/blazemilanomohairsuitside.avif" alt="Blaze Milano wool and mohair suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Blaze Milano</h1>
+        <h3>Alie wool and mohair suit</h3>
+        <p class="product-price">£875.00</p>
+        <div class="size-selector">
+          <label for="size-blaze-milano">Choose Your Size:</label>
+          <select id="size-blaze-milano" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="joseph-joly-evening-005">
+        <div class="slideshow-container">
+          <img src="images/josephsilksuitfront.avif" alt="Joseph wool and silk suit" class="slide active">
+          <img src="images/josephsilksuitback.avif" alt="Joseph wool and silk suit" class="slide">
+          <img src="images/josephsilksuitside.webp" alt="Joseph wool and silk suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Joseph</h1>
+        <h3>Joly evening wool and silk suit</h3>
+        <p class="product-price">£486.00</p>
+        <div class="size-selector">
+          <label for="size-joseph-joly">Choose Your Size:</label>
+          <select id="size-joseph-joly" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+       <div class="product-card" data-product-id="dorethee-schumacher-linen-006">
+        <div class="slideshow-container">
+          <img src="images/doretheeschumacherblendsuitfront.avif" alt="Dorethee Schumacher linen blend suit" class="slide active">
+          <img src="images/doretheeschumacherblendsuitback.avif" alt="Dorethee Schumacher linen blend suit" class="slide">
+          <img src="images/doretheeschumacherblendsuitside.avif" alt="Dorethee Schumacher linen blend suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Dorethee Schumacher</h1>
+        <h3>Modern linen-blend suit</h3>
+        <p class="product-price">£850.00</p>
+        <div class="size-selector">
+          <label for="size-dorethee-schumacher">Choose Your Size:</label>
+          <select id="size-dorethee-schumacher" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="bottega-veneta-knot-007">
+        <div class="slideshow-container">
+          <img src="images/bottegavenetawoolsuitfront.avif" alt="Bottega Veneta wool suit" class="slide active">
+          <img src="images/bottegavenetawoolsuit.avif" alt="Bottega Veneta wool suit" class="slide">
+          <img src="images/bottegavenetawoolsuitside.avif" alt="Bottega Veneta wool suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Bottega Veneta</h1>
+        <h3>Knot striped wool suit</h3>
+        <p class="product-price">£2,240.00</p>
+        <div class="size-selector">
+          <label for="size-bottega-veneta">Choose Your Size:</label>
+          <select id="size-bottega-veneta" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="max-mara-gradi-008">
+        <div class="slideshow-container">
+          <img src="images/maxmaracrepesuitfront.webp" alt="Max Mara crepe suit" class="slide active">
+          <img src="images/maxmaracrepesuitback.avif" alt="Max Mara crepe suit" class="slide">
+          <img src="images/maxmaracrepesuitside.avif" alt="Max Mara crepe suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Max Mara</h1>
+        <h3>Gradi draped crepe suit</h3>
+        <p class="product-price">£938.00</p>
+        <div class="size-selector">
+          <label for="size-max-mara-gradi">Choose Your Size:</label>
+          <select id="size-max-mara-gradi" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="isabel-marant-reva-009">
+        <div class="slideshow-container">
+          <img src="images/isabelmarantpinstripesuitfront.avif" alt="Isabel Marant pinstripe suit" class="slide active">
+          <img src="images/isabelmarantpinstripesuitback.avif" alt="Isabel Marant pinstripe suit" class="slide">
+          <img src="images/isabelmarantpinstripesuitside.avif" alt="Isabel Marant pinstripe suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Isabel Marant</h1>
+        <h3>Reva pinstripe wool blazer</h3>
+        <p class="product-price">£483.00</p>
+        <div class="size-selector">
+          <label for="size-isabel-marant">Choose Your Size:</label>
+          <select id="size-isabel-marant" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="victoria-beckham-single-010">
+        <div class="slideshow-container">
+          <img src="images/victoriabeckhamsinglebreastedsuitfront.avif" alt="Victoria Beckham single-breasted suit" class="slide active">
+          <img src="images/victoriabeckhamsinglebreastedsuitback.avif" alt="Victoria Beckham single-breasted suit" class="slide">
+          <img src="images/victoriabeckhamsinglebreastedsuitside.avif" alt="Victoria Beckham single-breasted suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Victoria Beckham</h1>
+        <h3>Single-breasted suit</h3>
+        <p class="product-price">£680.00</p>
+        <div class="size-selector">
+          <label for="size-victoria-beckham">Choose Your Size:</label>
+          <select id="size-victoria-beckham" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="vince-double-breasted-011">
+        <div class="slideshow-container">
+          <img src="images/vincetwillsuitfront.avif" alt="Vince twill suit" class="slide active">
+          <img src="images/vincetwillsuitback.avif" alt="Vince twill suit" class="slide">
+          <img src="images/vincetwillsuitside.avif" alt="Vince twill suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Vince</h1>
+        <h3>Double-breasted wool-blend twill suit</h3>
+        <p class="product-price">£430.00</p>
+        <div class="size-selector">
+          <label for="size-vince-twill">Choose Your Size:</label>
+          <select id="size-vince-twill" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+         <div class="product-card" data-product-id="dolce-gabbana-striped-012">
+        <div class="slideshow-container">
+          <img src="images/dolce&gabbanapinstripesuitfront.avif" alt="Dolce&Gabbana pinstripe suit" class="slide active">
+          <img src="images/dolce&gabbanapinstripesuitback.avif" alt="Dolce&Gabbana pinstripe suit" class="slide">
+          <img src="images/dolce&gabbanapinstripesuitside.avif" alt="Dolce&Gabbana pinstripe suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Dolce&Gabbana</h1>
+        <h3>Striped wool suit</h3>
+        <p class="product-price">£2,800.00</p>
+        <div class="size-selector">
+          <label for="size-dolce-gabbana-striped">Choose Your Size:</label>
+          <select id="size-dolce-gabbana-striped" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="acne-studios-single-013">
+        <div class="slideshow-container">
+          <img src="images/acnesuitfront.avif" alt="Acne studios suit" class="slide active">
+          <img src="images/acnesuitback.avif" alt="Acne studios suit" class="slide">
+          <img src="images/acnesuitside.avif" alt="Acne studios suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Acne Studios</h1>
+        <h3>Single-breasted suit</h3>
+        <p class="product-price">£650.00</p>
+        <div class="size-selector">
+          <label for="size-acne-studios">Choose Your Size:</label>
+          <select id="size-acne-studios" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="veronica-beard-miller-014">
+        <div class="slideshow-container">
+          <img src="images/veronicabearddickysuitfront.webp" alt="Veronica Beard miller dicky suit " class="slide active">
+          <img src="images/veronicabearddickysuitback.avif" alt="Veronica Beard miller dicky suit" class="slide">
+          <img src="images/veronicabearddickysuitsid.webp" alt="Veronica Beard miller dicky suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Veronica Beard</h1>
+        <h3>Miller Dicky suit</h3>
+        <p class="product-price">£600.00</p>
+        <div class="size-selector">
+          <label for="size-veronica-beard">Choose Your Size:</label>
+          <select id="size-veronica-beard" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-product-id="dolce-gabbana-twill-suit-001">
+        <div class="slideshow-container">
+          <img src="images/altuzarrafenicesuitfront.avif" alt="Altuzarra fenice suit" class="slide active">
+          <img src="images/altuzarrafenicesuitback.avif" alt="Altuzarra fenice suit" class="slide">
+          <img src="images/altuzarrafenicesuitside.webp" alt="Altuzarra fenice suit" class="slide">
+
+        </div>
+        <h1 class="product-name">Altuzza</h1>
+        <h3>Fenice suit</h3>
+        <p class="product-price">£1,165.00</p>
+        <div class="size-selector">
+          <label for="size-dolce-gabbana-twill">Choose Your Size:</label>
+          <select id="size-dolce-gabbana-twill" class="size-dropdown">
+            <option value="-">-</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 LUSSO•NERO. Made by Edward Wilson</p>
+  </footer>
+
+  <script src="./js/cart.js"></script>
+  <script src="./js/formalwear.js"></script>
+</body>
+</html>
